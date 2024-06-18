@@ -2,3 +2,4 @@ tqdm
 elasticsearch
 boto3
 streamlit
+requests
