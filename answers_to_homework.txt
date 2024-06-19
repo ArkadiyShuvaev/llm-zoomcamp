@@ -5,3 +5,5 @@ HW 1 (https://github.com/DataTalksClub/llm-zoomcamp/blob/main/cohorts/2024/01-in
 q1: 42f05b9372a9a4a470db3b52817899b99a76ee73
 q2: index
 q3: 84.05
+q4: How do I copy files from a different folder into docker container’s working directory?
+q5: 
