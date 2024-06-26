@@ -21,10 +21,9 @@ services:
       - discovery.type=single-node
       - xpack.security.enabled=false
 
-  # cuda:
-  #   image: nvidia/cuda:12.5.0-runtime-ubuntu22.04
-  #   runtime: nvidia
-  #   environment:
-  #     - NVIDIA_VISIBLE_DEVICES=all
-  #   # volumes:
-  #     # - .:/home/jovyan/work
+  ollama:
+      image: ollama/ollama:latest
+      ports:
+        - "11434:11434"
+      environment:
+        - OLLAMA_USE_CPU=1

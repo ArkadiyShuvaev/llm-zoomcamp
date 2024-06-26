@@ -3,5 +3,3 @@ elasticsearch
 boto3
 streamlit
 requests
-torch
-transformers
