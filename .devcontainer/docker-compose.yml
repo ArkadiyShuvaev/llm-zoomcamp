@@ -21,18 +21,18 @@ services:
       - discovery.type=single-node
       - xpack.security.enabled=false
 
-  ollama:
-      image: ollama/ollama:latest
-      ports:
-        - "11434:11434"
-      environment:
-        - OLLAMA_USE_CPU=1
+  # ollama:
+  #     image: ollama/ollama:latest
+  #     ports:
+  #       - "11434:11434"
+  #     environment:
+  #       - OLLAMA_USE_CPU=1
 
-  # ollama-gemma2b:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile.ollama.gemma2b
-  #   ports:
-  #     - "11434:11434"
-  #   environment:
-  #     - OLLAMA_USE_CPU=1
+  ollama-gemma2b:
+    build:
+      context: .
+      dockerfile: Dockerfile.ollama.gemma2b
+    ports:
+      - "11434:11434"
+    environment:
+      - OLLAMA_USE_CPU=1
