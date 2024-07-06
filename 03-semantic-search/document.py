@@ -10,6 +10,7 @@ class Document:
     text: str
     section: str
     question: str
+    text_vector: list
 
     @classmethod
     def create(cls, course: str, question: str, text: str, section: str) -> "Document":
@@ -20,6 +21,7 @@ class Document:
             text=text,
             section=section,
             question=question,
+            text_vector=None
         )
 
     def to_mapping(self) -> Dict[str, Any]:
