@@ -4,3 +4,4 @@ boto3
 streamlit
 requests
 sentence-transformes
+psycopg2
