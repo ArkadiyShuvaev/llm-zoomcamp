@@ -3,5 +3,5 @@ elasticsearch
 boto3
 streamlit
 requests
-sentence-transformes
-psycopg2
+sentence-transformers
+psycopg2-binary

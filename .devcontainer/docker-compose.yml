@@ -46,7 +46,7 @@ services:
     ports:
     - 5432:5432
     volumes:
-      monitoring_data:/var/lib/postgresql/data
+      - monitoring_data:/var/lib/postgresql/data
 
   dashboard:
     image: grafana/grafana:11.0.0
@@ -60,8 +60,8 @@ services:
       - "3000:3000"
     volumes:
       - grafana_data:/var/lib/grafana
-      - ./04-monitoring/grafana/grafana.ini:/etc/grafana/grafana.ini
-      - ./04-monitoring/grafana/provisioning:/etc/grafana/provisioning
+      # - ../04-monitoring/grafana/grafana.ini:/etc/grafana/grafana.ini
+      - ../04-monitoring/grafana/provisioning:/etc/grafana/provisioning
 
 volumes:
   monitoring_data: {}

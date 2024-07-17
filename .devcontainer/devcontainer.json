@@ -34,7 +34,7 @@
 	// "forwardPorts": [5000, 5432],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install -Uq --user -r requirements.txt",
+	"postCreateCommand": "pip install -U --user -r requirements.txt",
 
 	"containerEnv": {
 		"JUPYTER_TOKEN": "easy"
