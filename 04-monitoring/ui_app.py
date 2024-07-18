@@ -52,7 +52,7 @@ if st.button("Send"):
     if user_input:
         st.session_state.messages.append({'role': 'user', 'content': user_input})
         save_message_to_db(POSTGRES_DB_PARAMS, st.session_state.session_id, 'user', user_input)
-        response = ask_llm("gpt-3.5-turbo-0125", st.session_state.messages)
+        response = ask_llm("amazon.titan-text-lite-v1", st.session_state.messages)
         st.session_state.messages.append({'role': 'assistant', 'content': response})
         save_message_to_db(POSTGRES_DB_PARAMS, st.session_state.session_id, 'assistant', response)
         st.rerun()
