@@ -61,7 +61,7 @@ services:
     volumes:
       - grafana_data:/var/lib/grafana
       # - ../04-monitoring/grafana/grafana.ini:/etc/grafana/grafana.ini
-      - ../04-monitoring/grafana/provisioning:/etc/grafana/provisioning
+      # - ../04-monitoring/grafana/provisioning:/etc/grafana/provisioning
 
 volumes:
   monitoring_data: {}
