@@ -11,7 +11,10 @@
               "${file}",
               "--server.port",
               "2000"
-          ]
+          ],
+          "env": {
+            "isMockLlmResponse": "false"
+          }
       }
   ]
 }
