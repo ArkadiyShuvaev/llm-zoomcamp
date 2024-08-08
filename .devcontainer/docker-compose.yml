@@ -67,9 +67,10 @@ services:
     ports:
       - 6789:6789
     volumes:
-      - .:/home/src/
-      - ~/.aws/credentials:/root/.aws/credentials
+      - llm-zoomcamp:/home/src/
+      # - ~/.aws/credentials:/root/.aws/credentials
     restart: on-failure:5
 
 volumes:
-  llm_zoomcamp_data: {}
+  llm-zoomcamp:
+  llm_zoomcamp_data:
