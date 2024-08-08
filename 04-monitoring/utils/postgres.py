@@ -7,7 +7,7 @@ from datetime import datetime
 POSTGRES_DB_PARAMS = {
     'user': os.getenv('POSTGRES_USER', 'admin'),
     'password': os.getenv('POSTGRES_PASSWORD', 'P@ssw0rd!'),
-    'host': os.getenv('POSTGRES_HOST', 'metrics-db'),
+    'host': os.getenv('POSTGRES_HOST', 'db'),
     'port': os.getenv('POSTGRES_PORT', '5432')
 }
 

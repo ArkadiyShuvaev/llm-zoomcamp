@@ -37,7 +37,7 @@ services:
     environment:
       - OLLAMA_USE_CPU=1
 
-  metrics-db:
+  db:
     image: postgres
     environment:
       POSTGRES_USER: "admin"
@@ -48,21 +48,5 @@ services:
     volumes:
       - monitoring_data:/var/lib/postgresql/data
 
-  dashboard:
-    image: grafana/grafana:11.0.0
-    depends_on:
-      - metrics-db
-      - app
-    environment:
-      GF_SECURITY_ADMIN_USER: "admin"
-      GF_SECURITY_ADMIN_PASSWORD: "P@ssw0rd!"
-    ports:
-      - "3000:3000"
-    volumes:
-      - grafana_data:/var/lib/grafana
-      # - ../04-monitoring/grafana/grafana.ini:/etc/grafana/grafana.ini
-      # - ../04-monitoring/grafana/provisioning:/etc/grafana/provisioning
-
 volumes:
   monitoring_data: {}
-  grafana_data: {}

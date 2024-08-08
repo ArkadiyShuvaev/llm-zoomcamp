@@ -3,7 +3,7 @@ datasources:
   - name: MonitoringChatBevahior
     type: postgres
     access: proxy
-    url: metrics-db:5432
+    url: db:5432
     database: chat_monitoring
     user: admin
     secureJsonData:
@@ -23,7 +23,7 @@ datasources:
   - name: MonitoringLLMBevahior
     type: postgres
     access: proxy
-    url: metrics-db:5432
+    url: db:5432
     database: ground_truth_monitoring
     user: admin
     secureJsonData:
