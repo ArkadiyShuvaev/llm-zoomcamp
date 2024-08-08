@@ -42,11 +42,34 @@ services:
     environment:
       POSTGRES_USER: "admin"
       POSTGRES_PASSWORD: "P@ssw0rd!"
-      POSTGRES_DB: "metrics_db"
+      POSTGRES_DB: "app-data"
     ports:
     - 5432:5432
     volumes:
-      - monitoring_data:/var/lib/postgresql/data
+      - llm_zoomcamp_data:/var/lib/postgresql/data
+
+  mage:
+    image: mageai/mageai:latest
+    container_name: magic
+    depends_on:
+      - db
+    command: mage start magic
+    build:
+      context: ./mage-ai
+    # env_file:
+    #   - .env
+    environment:
+      POSTGRES_DB: "mage-data"
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "P@ssw0rd!"
+      POSTGRES_HOST: "db"
+      PG_HOST_PORT: "5432"
+    ports:
+      - 6789:6789
+    volumes:
+      - .:/home/src/
+      - ~/.aws/credentials:/root/.aws/credentials
+    restart: on-failure:5
 
 volumes:
-  monitoring_data: {}
+  llm_zoomcamp_data: {}
