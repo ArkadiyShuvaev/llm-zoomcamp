@@ -7,7 +7,7 @@
 	"mounts": [
 		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws/credentials,target=/home/jovyan/.aws/credentials,type=bind"
 	],
-	// "workspaceFolder": "/home/jovyan/work",
+	"workspaceFolder": "/home/jovyan/work",
 
 	"customizations": {
 		"vscode": {
