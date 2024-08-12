@@ -34,7 +34,7 @@ def ingest_api_data(*args, **kwargs) -> List[Dict]:
 
     response = requests.request(
         method=method,
-        url=endpoint or  'https://raw.githubusercontent.com/DataTalksClub/llm-zoomcamp/main/01-intro/documents.json',
+        url=endpoint or 'https://raw.githubusercontent.com/DataTalksClub/llm-zoomcamp/main/01-intro/documents.json',
         headers=headers,
         timeout=timeout
     )
