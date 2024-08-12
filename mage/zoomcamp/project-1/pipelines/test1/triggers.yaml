@@ -1,0 +1,14 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2024-08-12 11:07:59.011873
+  name: sparkling ancient
+  pipeline_uuid: test1
+  schedule_interval: '@once'
+  schedule_type: time
+  settings: null
+  sla: null
+  start_time: 2024-08-11 11:07:00
+  status: active
+  token: 8e594b0be4124e518d27cc0798d29041
+  variables: {}

@@ -5,6 +5,10 @@ services:
     image: quay.io/jupyter/minimal-notebook:latest
     ports:
       - "8888:8888"
+    depends_on:
+      - db
+    links:
+      - db
     volumes:
       - .:/llm-zoomcamp:cached
     environment:
@@ -42,7 +46,7 @@ services:
     environment:
       POSTGRES_USER: "admin"
       POSTGRES_PASSWORD: "P@ssw0rd!"
-      POSTGRES_DB: "app-data"
+      POSTGRES_DB: "mage-data"
     ports:
     - 5432:5432
     volumes:
@@ -53,9 +57,11 @@ services:
     container_name: magic
     depends_on:
       - db
-    command: mage start magic
+    links:
+      - db
+    # command: mage start zoomcamp
     build:
-      context: ./mage-ai
+      context: ./mage
     # env_file:
     #   - .env
     environment:

@@ -1,10 +1,10 @@
 {
-  "name": "Jupyter + RAG",
+  "name": "Mage",
   "dockerComposeFile": "../../docker-compose.yml",
-  "service": "app",
+  "service": "mage",
   "shutdownAction": "none",
-  "workspaceFolder": "/llm-zoomcamp/course",
-  "workspaceMount": "source=${localWorkspaceFolder}/course,target=/llm-zoomcamp,type=bind",
+  "workspaceFolder": "/llm-zoomcamp/mage",
+  "workspaceMount": "source=${localWorkspaceFolder}/mage,target=/llm-zoomcamp,type=bind",
   "mounts": [
     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws/credentials,target=/home/jovyan/.aws/credentials,type=bind"
   ],
@@ -26,7 +26,8 @@
         "GitHub.copilot-chat"
       ]
     }
-  },
+  }
+  //,
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pip install -U --user -r requirements.txt"
+  //"postCreateCommand": "pip install -U --user -r requirements.txt"
 }
