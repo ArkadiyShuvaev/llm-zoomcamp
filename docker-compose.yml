@@ -6,7 +6,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - .:/home/jovyan/work
+      - .:/llm-zoomcamp:cached
     environment:
       - JUPYTER_ENABLE_LAB=yes
       - GRANT_SUDO=yes
@@ -67,10 +67,9 @@ services:
     ports:
       - 6789:6789
     volumes:
-      - llm_zoomcamp_src:/home/src/
+      - .:/llm-zoomcamp:cached
       # - ~/.aws/credentials:/root/.aws/credentials
     restart: on-failure:5
 
 volumes:
-  llm_zoomcamp_src:
   llm_zoomcamp_data:

@@ -3,8 +3,8 @@
   "dockerComposeFile": "../../docker-compose.yml",
   "service": "app",
   "shutdownAction": "none",
-  "workspaceFolder": "/workspace/course-src",
-  "workspaceMount": "source=${localWorkspaceFolder}/course-src,target=/workspace,type=bind",
+  "workspaceFolder": "/llm-zoomcamp/course-src",
+  "workspaceMount": "source=${localWorkspaceFolder}/course-src,target=/llm-zoomcamp,type=bind",
   "mounts": [
     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws/credentials,target=/home/jovyan/.aws/credentials,type=bind"
   ],
