@@ -65,17 +65,17 @@ services:
     # env_file:
     #   - .env
     environment:
-      POSTGRES_DB: "mage-data"
-      POSTGRES_USER: "admin"
-      POSTGRES_PASSWORD: "P@ssw0rd!"
-      POSTGRES_HOST: "db"
-      PG_HOST_PORT: "5432"
+      # POSTGRES_DB: "mage-data"
+      # POSTGRES_USER: ""
+      # POSTGRES_PASSWORD: ""
+      # POSTGRES_HOST: "db"
+      # PG_HOST_PORT: "5432"
+      MAGE_DATABASE_CONNECTION_URL: "postgresql+psycopg2://admin:P@ssw0rd!@db:5432/mage-data"
     ports:
       - 6789:6789
     volumes:
       - .:/llm-zoomcamp:cached
-      # - ~/.aws/credentials:/root/.aws/credentials
-    restart: on-failure:5
+    restart: on-failure:2
 
 volumes:
   llm_zoomcamp_data:

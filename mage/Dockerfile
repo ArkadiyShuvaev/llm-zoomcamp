@@ -22,7 +22,6 @@ RUN if [ -f ${USER_CODE_PATH}/requirements.txt ]; then pip3 install -r ${USER_CO
 # Install custom libraries within 3rd party libraries (e.g. DBT packages) if install_other_dependencies.py exists
 RUN if [ -f /app/install_other_dependencies.py ]; then python3 /app/install_other_dependencies.py --path ${USER_CODE_PATH}; fi
 
-
 RUN pip3 install --no-cache-dir "git+https://github.com/mage-ai/mage-ai.git@td--create_blocks_tmp3#egg=mage-ai[all]"
 
 CMD ["/bin/sh", "-c", "/app/run_app.sh"]
