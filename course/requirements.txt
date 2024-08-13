@@ -1,0 +1,7 @@
+tqdm
+elasticsearch
+boto3
+streamlit
+requests
+sentence-transformers
+psycopg2-binary

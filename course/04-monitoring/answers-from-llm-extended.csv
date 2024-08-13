@@ -1,0 +1,51 @@
+answer_llm,question_llm,answer_orig,document,course,cosine_similarity
+The course begins on 15th Jan 2024 at 17h00.,When does the course begin?,"The purpose of this document is to capture frequently asked technical questions
+The exact day and hour of the course will be 15th Jan 2024 at 17h00. The course will start with the first  “Office Hours'' live.1
+Subscribe to course public Google Calendar (it works from Desktop only).
+Register before the course starts using this link.
+Join the course Telegram channel with announcements.
+Don’t forget to register in DataTalks.Club's Slack and join the channel.",c02e79ef,data-engineering-zoomcamp,0.5477259
+Subscribe to course public Google Calendar (it works from Desktop only).,How can I get the course schedule?,"The purpose of this document is to capture frequently asked technical questions
+The exact day and hour of the course will be 15th Jan 2024 at 17h00. The course will start with the first  “Office Hours'' live.1
+Subscribe to course public Google Calendar (it works from Desktop only).
+Register before the course starts using this link.
+Join the course Telegram channel with announcements.
+Don’t forget to register in DataTalks.Club's Slack and join the channel.",c02e79ef,data-engineering-zoomcamp,0.43424457
+Register before the course starts using this link.,What is the link for course registration?,"The purpose of this document is to capture frequently asked technical questions
+The exact day and hour of the course will be 15th Jan 2024 at 17h00. The course will start with the first  “Office Hours'' live.1
+Subscribe to course public Google Calendar (it works from Desktop only).
+Register before the course starts using this link.
+Join the course Telegram channel with announcements.
+Don’t forget to register in DataTalks.Club's Slack and join the channel.",c02e79ef,data-engineering-zoomcamp,0.5151472
+Join the course Telegram channel with announcements.,How can I receive course announcements?,"The purpose of this document is to capture frequently asked technical questions
+The exact day and hour of the course will be 15th Jan 2024 at 17h00. The course will start with the first  “Office Hours'' live.1
+Subscribe to course public Google Calendar (it works from Desktop only).
+Register before the course starts using this link.
+Join the course Telegram channel with announcements.
+Don’t forget to register in DataTalks.Club's Slack and join the channel.",c02e79ef,data-engineering-zoomcamp,0.6999115
+Don’t forget to register in DataTalks.Club's Slack and join the channel.,Where do I join the Slack channel?,"The purpose of this document is to capture frequently asked technical questions
+The exact day and hour of the course will be 15th Jan 2024 at 17h00. The course will start with the first  “Office Hours'' live.1
+Subscribe to course public Google Calendar (it works from Desktop only).
+Register before the course starts using this link.
+Join the course Telegram channel with announcements.
+Don’t forget to register in DataTalks.Club's Slack and join the channel.",c02e79ef,data-engineering-zoomcamp,0.49686116
+GitHub - DataTalksClub data-engineering-zoomcamp#prerequisites,Where can I find the prerequisites for this course?,GitHub - DataTalksClub data-engineering-zoomcamp#prerequisites,1f6520ca,data-engineering-zoomcamp,1.0
+You can find them in GitHub - DataTalksClub data-engineering-zoomcamp#prerequisites,How do I check the prerequisites for this course?,GitHub - DataTalksClub data-engineering-zoomcamp#prerequisites,1f6520ca,data-engineering-zoomcamp,0.90110135
+Github - DataTalksClub data-engineering-zoomcamp#prerequisites,Where are the course prerequisites listed?,GitHub - DataTalksClub data-engineering-zoomcamp#prerequisites,1f6520ca,data-engineering-zoomcamp,1.0
+GitHub - DataTalksClub data-engineering-zoomcamp#prerequisites,What are the requirements for joining this course?,GitHub - DataTalksClub data-engineering-zoomcamp#prerequisites,1f6520ca,data-engineering-zoomcamp,1.0
+The prerequisites for the course can be found at GitHub - DataTalksClub data-engineering-zoomcamp#prerequisites,Where is the list of prerequisites for the course?,GitHub - DataTalksClub data-engineering-zoomcamp#prerequisites,1f6520ca,data-engineering-zoomcamp,0.8623152
+"Yes, even if you don't register, you're still eligible to submit the homeworks. Be aware, however, that there will be deadlines for turning in the final projects. So don't leave everything for the last minute.",Can I enroll in the course after it starts?,"Yes, even if you don't register, you're still eligible to submit the homeworks.
+Be aware, however, that there will be deadlines for turning in the final projects. So don't leave everything for the last minute.",7842b56a,data-engineering-zoomcamp,0.99999994
+"Yes, you can still join the course after the start date.",Is late registration possible?,"Yes, even if you don't register, you're still eligible to submit the homeworks.
+Be aware, however, that there will be deadlines for turning in the final projects. So don't leave everything for the last minute.",7842b56a,data-engineering-zoomcamp,0.42917314
+"Yes, even if you don't register, you're still eligible to submit the homeworks.",Am I eligible to submit homework if I join late?,"Yes, even if you don't register, you're still eligible to submit the homeworks.
+Be aware, however, that there will be deadlines for turning in the final projects. So don't leave everything for the last minute.",7842b56a,data-engineering-zoomcamp,0.91507363
+"Yes, even if you join late, there will be deadlines for final projects. Don't leave everything for the last minute.",Are there deadlines for final projects if I join late?,"Yes, even if you don't register, you're still eligible to submit the homeworks.
+Be aware, however, that there will be deadlines for turning in the final projects. So don't leave everything for the last minute.",7842b56a,data-engineering-zoomcamp,0.5531498
+"No, the homework has deadlines and cannot be submitted at the end of the course.",Can I submit all assignments at the end of the course if I start late?,"Yes, even if you don't register, you're still eligible to submit the homeworks.
+Be aware, however, that there will be deadlines for turning in the final projects. So don't leave everything for the last minute.",7842b56a,data-engineering-zoomcamp,0.63934696
+You don't need it. You're accepted. You can also just start learning and submitting homework without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.,When will I receive the confirmation email after registering for the Data Engineering Bootcamp?,You don't need it. You're accepted. You can also just start learning and submitting homework without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.,0bbf41ec,data-engineering-zoomcamp,1.0
+"No, You don't need it. You're accepted. You can also just start learning and submitting homework without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.",Do I need the confirmation email to start the Data Engineering Bootcamp?,You don't need it. You're accepted. You can also just start learning and submitting homework without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.,0bbf41ec,data-engineering-zoomcamp,0.9782169
+"Yes, you can start learning and submitting homework without registering for the Data Engineering Bootcamp. Registration is optional and is only used to gauge interest before the start date. The course is open to everyone, and there are no prerequisites required to participate. Even if you don't register, you are still eligible to submit homework assignments and complete the course. However, keep in mind that there will be deadlines for turning in the final projects, so it's best not to leave everything until the last minute.",Can I begin learning and submitting homework without registering for the Data Engineering Bootcamp?,You don't need it. You're accepted. You can also just start learning and submitting homework without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.,0bbf41ec,data-engineering-zoomcamp,0.6577082
+Registration is just to gauge interest before the start date. You don't need it. You're accepted. You can also just start learning and submitting homework without registering.,Is registration for the Data Engineering Bootcamp mandatory to start the course?,You don't need it. You're accepted. You can also just start learning and submitting homework without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.,0bbf41ec,data-engineering-zoomcamp,0.9212465
+Registration is just to gauge interest before the start date.,What is the purpose of registering for the Data Engineering Bootcamp if it is not mandatory?,You don't need it. You're accepted. You can also just start learning and submitting homework without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.,0bbf41ec,data-engineering-zoomcamp,0.6176125

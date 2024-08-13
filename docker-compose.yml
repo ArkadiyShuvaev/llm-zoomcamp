@@ -1,0 +1,81 @@
+version: '3.8'
+
+services:
+  app:
+    image: quay.io/jupyter/minimal-notebook:latest
+    ports:
+      - "8888:8888"
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - .:/llm-zoomcamp:cached
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - GRANT_SUDO=yes
+      - JUPYTER_TOKEN=easy
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.4.3
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+
+  # ollama:
+  #     image: ollama/ollama:latest
+  #     ports:
+  #       - "11434:11434"
+  #     environment:
+  #       - OLLAMA_USE_CPU=1
+
+  ollama-gemma2b:
+    build:
+      context: .
+      dockerfile: Dockerfile.ollama.gemma2b
+    ports:
+      - "11434:11434"
+    environment:
+      - OLLAMA_USE_CPU=1
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "P@ssw0rd!"
+      POSTGRES_DB: "mage-data"
+    ports:
+    - 5432:5432
+    volumes:
+      - llm_zoomcamp_data:/var/lib/postgresql/data
+
+  mage:
+    image: mageai/mageai:latest
+    container_name: magic
+    depends_on:
+      - db
+    links:
+      - db
+    # command: mage start zoomcamp
+    build:
+      context: ./mage
+    # env_file:
+    #   - .env
+    environment:
+      # POSTGRES_DB: "mage-data"
+      # POSTGRES_USER: ""
+      # POSTGRES_PASSWORD: ""
+      # POSTGRES_HOST: "db"
+      # PG_HOST_PORT: "5432"
+      MAGE_DATABASE_CONNECTION_URL: "postgresql+psycopg2://admin:P@ssw0rd!@db:5432/mage-data"
+    ports:
+      - 6789:6789
+    volumes:
+      - .:/llm-zoomcamp:cached
+    restart: on-failure:2
+
+volumes:
+  llm_zoomcamp_data:

@@ -1,0 +1,10 @@
+LLM Zoomcamp 2024
+https://courses.datatalks.club/llm-zoomcamp-2024/
+
+HW 1 (https://github.com/DataTalksClub/llm-zoomcamp/blob/main/cohorts/2024/01-intro/homework.md)
+q1: 42f05b9372a9a4a470db3b52817899b99a76ee73
+q2: index
+q3: 84.05
+q4: How do I copy files from a different folder into docker container’s working directory?
+q5: 1462 (1460 in my case)
+q6: 322 (301 in my case)
