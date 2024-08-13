@@ -21,6 +21,9 @@ ENV USER_CODE_PATH=${USER_CODE_PATH}
 # Set the MAGE_DATA_DIR variable to the path of the Mage data directory.
 ENV MAGE_DATA_DIR=${MAGE_DATA_DIR}
 
+# Set the number of versions
+ENV MAX_NUMBER_OF_FILE_VERSIONS=2
+
 pip install --upgrade pip
 
 # Install nltk
