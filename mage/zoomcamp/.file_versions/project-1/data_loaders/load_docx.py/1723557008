@@ -11,7 +11,7 @@ from zoomcamp.shared.load_google_doc import read_faq
 
 
 @data_loader
-def load_data_from_api(*args, **kwargs) -> pd.DataFrame:
+def load_data_from_api(*args, **kwargs) -> List:
     """
     Template for loading data from API
     """

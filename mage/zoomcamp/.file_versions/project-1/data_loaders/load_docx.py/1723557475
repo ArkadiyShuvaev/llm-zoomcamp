@@ -11,15 +11,24 @@ from zoomcamp.shared.load_google_doc import read_faq
 
 
 @data_loader
-def load_data_from_api(*args, **kwargs) -> pd.DataFrame:
+def load_data_from_api(*args, **kwargs):
     """
     Template for loading data from API
     """
     document_id = kwargs.get('document_id')
 
     result = read_faq(document_id)
-    df = pd.DataFrame(result)
-    return df
+
+    # The method should return a dataframe.
+    # For the sake of learning, let's return an 
+    documents = []
+
+    for course, file_id in faq_documents.items():
+        print(course)
+        course_documents = read_faq(file_id)
+        documents.append({'course': course, 'documents': course_documents})
+
+    return result
 
 @test
 def test_output(output, *args) -> None:
