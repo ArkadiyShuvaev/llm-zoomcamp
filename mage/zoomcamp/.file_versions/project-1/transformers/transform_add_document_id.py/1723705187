@@ -26,7 +26,7 @@ def transform(df: DataFrame, *args, **kwargs):
     """
     for idx, row in df.iterrows():
         id = create_document_id(row)
-        df.at[idx, "doc_id"] = "llm-zoomcamp"
+        df.at[idx, "document_id"] = id
 
     return df
 

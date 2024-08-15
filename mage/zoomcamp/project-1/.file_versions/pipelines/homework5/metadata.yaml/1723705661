@@ -36,29 +36,66 @@ blocks:
   upstream_blocks:
   - load_docx
   uuid: add_column_with_course_name
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     file_path: project-1/transformers/transform_add_document_id.py
     file_source:
       path: project-1/transformers/transform_add_document_id.py
-  downstream_blocks: []
+  downstream_blocks:
+  - tokenization_subword_level
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
   name: transform_add_document_id
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
   - add_column_with_course_name
   uuid: transform_add_document_id
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: project-1/transformers/tokenization_subword_level.py
+  downstream_blocks:
+  - export_data
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: tokenization subword-level
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - transform_add_document_id
+  uuid: tokenization_subword_level
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_source:
+      path: project-1/data_exporters/export_data.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: export data
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - tokenization_subword_level
+  uuid: export_data
 cache_block_output_in_memory: false
 callbacks: []
-concurrency_config:
-  on_pipeline_run_limit_reached: wait
+concurrency_config: {}
 conditionals: []
 created_at: '2024-08-13 10:45:18.181563+00:00'
 data_integration: null
