@@ -24,4 +24,8 @@ for course, file_id in faq_documents.items():
 print(len(documents))
 
 
-pprint(documents[0])
+# pprint(documents[0])
+
+df = pd.DataFrame(result)
+for document in df.to_dict(orient="records"):
+    print(f'Indexing document {document["section"]}')

@@ -75,7 +75,7 @@ blocks:
   upstream_blocks:
   - transform_add_document_id
   uuid: tokenization_subword_level
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     file_source:
@@ -87,7 +87,7 @@ blocks:
   language: python
   name: export data
   retry_config: null
-  status: not_executed
+  status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
@@ -118,5 +118,6 @@ type: python
 uuid: homework5
 variables:
   document_id: 1qZjwHkvP0lXHiE4zdbWyUXSVfmVGzougDD6N37bat3E
+  index_name: documents_2024-08-16_35-48
 variables_dir: /llm-zoomcamp/mage/mage_data/project-1
 widgets: []

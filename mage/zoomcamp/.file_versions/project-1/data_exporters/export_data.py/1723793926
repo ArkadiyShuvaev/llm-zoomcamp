@@ -59,7 +59,7 @@ def elasticsearch(documents: DataFrame, *args, **kwargs):
         print('Index created with properties:', index_settings)
 
     print(f'Indexing {len(documents)} documents to Elasticsearch index {index_name}')
-    for document in documents.to_dict(orient="records"):
+    for document in documents.iterrows():
         print(f'Indexing document {document["document_id"]}')
 
         es_client.index(index=index_name, document=document)
