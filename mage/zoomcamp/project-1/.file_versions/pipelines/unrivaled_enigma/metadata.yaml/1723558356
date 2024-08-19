@@ -35,6 +35,25 @@ blocks:
   type: data_loader
   upstream_blocks: []
   uuid: clandestine_omega
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: project-1/custom/fabled_mirage.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - enrich
+  has_callback: false
+  language: python
+  name: Fabled mirage
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: custom
+  upstream_blocks: []
+  uuid: fabled_mirage
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
@@ -58,5 +77,5 @@ spark_config: {}
 tags: []
 type: python
 uuid: unrivaled_enigma
-variables_dir: /home/src/mage_data/project-1
+variables_dir: /llm-zoomcamp/mage/mage_data/project-1
 widgets: []
