@@ -10,11 +10,14 @@ services:
     links:
       - db
     volumes:
-      - .:/llm-zoomcamp:cached
+      - .:/home/jovyan/work:cached
     environment:
       - JUPYTER_ENABLE_LAB=yes
       - GRANT_SUDO=yes
       - JUPYTER_TOKEN=easy
+      - CHOWN_EXTRA=/home/jovyan/work
+      - CHOWN_EXTRA_OPTS=-R
+    user: root
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.4.3

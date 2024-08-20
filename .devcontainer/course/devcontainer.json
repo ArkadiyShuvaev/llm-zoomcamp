@@ -3,8 +3,8 @@
   "dockerComposeFile": "../../docker-compose.yml",
   "service": "app",
   "shutdownAction": "none",
-  "workspaceFolder": "/llm-zoomcamp/course",
-  "workspaceMount": "source=${localWorkspaceFolder}/course,target=/llm-zoomcamp,type=bind",
+  "workspaceFolder": "/home/jovyan/work/course",
+  "workspaceMount": "source=${localWorkspaceFolder}/course,target=/home/jovyan/work,type=bind,consistency=cached",
   "mounts": [
     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws/credentials,target=/home/jovyan/.aws/credentials,type=bind"
   ],
@@ -28,5 +28,5 @@
     }
   },
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pip install -U --user -r requirements.txt"
+  //"postCreateCommand": "pip install -U --user -r requirements.txt"
 }
