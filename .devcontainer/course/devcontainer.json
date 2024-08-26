@@ -3,6 +3,7 @@
   "dockerComposeFile": "../../docker-compose.yml",
   "service": "app",
   "shutdownAction": "none",
+  "remoteUser": "jovyan",
   "workspaceFolder": "/home/jovyan/work/course",
   "workspaceMount": "source=${localWorkspaceFolder}/course,target=/home/jovyan/work,type=bind,consistency=cached",
   "mounts": [
